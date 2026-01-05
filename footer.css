@@ -1,0 +1,83 @@
+footer {
+  padding: 30px 0 20px;
+  background-color: var(--primary-color);
+}
+footer h2 {
+  font-size: 70px;
+  text-align: center;
+  margin: 10px 0 20px;
+}
+.contact-box {
+  padding: 32px;
+  padding-top: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+.contact-card .kv {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-card h3 {
+  font-size: 26px;
+  margin: 0;
+}
+.contact-card p {
+  font-size: 20px;
+  margin: 0;
+  color: var(--secondary-text-color);
+}
+.contact-card a {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255, 255, 255, 3);
+}
+.contact-card a:hover {
+  border-bottom-color: var(--main-brand-color);
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+.logos a {
+  line-height: 0;
+  transition: transform 0.15s ease-in-out;
+}
+.logos a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.logos img {
+  width: 7rem;
+}
+.logos .linkedin img {
+  background-color: white;
+  border-radius: 19px;
+}
+@media (max-width: 600px) {
+  .contact-card h3 {
+    font-size: 20px;
+  }
+  .contact-card p {
+    font-size: 16px;
+  }
+  .logos a:first-child img {
+    width: 140px;
+  }
+  .logos a:last-child img {
+    width: 60px;
+  }
+}
